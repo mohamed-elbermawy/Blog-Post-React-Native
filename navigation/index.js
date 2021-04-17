@@ -4,7 +4,7 @@ import { Text } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
 import HomeStack from "../navigation/HomeStack";
-import Profile from "../screens/Profile";
+import ProfileStack from "../navigation/ProfileStack";
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -35,7 +35,7 @@ export default function ManiTab() {
       />
       <Screen
         name="PROFILE"
-        component={Profile}
+        component={ProfileStack}
         options={{
           tabBarLabel: ({ focused }) => (
             <Text
